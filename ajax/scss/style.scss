@@ -1,0 +1,853 @@
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("https://iliazhabin.ru/font/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MontserratBold";
+  src: url("https://iliazhabin.ru/font/Montserrat-Bold.ttf ") format("truetype");
+}
+@font-face {
+  font-family: "MontserratMedium";
+  src: url("https://iliazhabin.ru/font/Montserrat-Medium.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+}
+.body__backgraund {
+  background-color: #19191b;;
+}
+.body__margin {
+	margin: 0!important;
+}
+.body__padding {
+	padding: 0!important;
+}
+
+.header {
+  background-color: #CE2039;
+  background-image: url("../img/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  padding-bottom: 13.3vw;
+}
+.bg-light {
+  --bs-bg-opacity: 0!important;
+}
+.hamburger {
+  display: none!important;
+}
+.hamburger__inner {
+  justify-content: end!important;
+}
+.offcanvas-end {
+  width:auto!important;
+}
+.header__navig {
+  padding-top: 1.5%;
+  padding-left: 2.9%;
+  padding-right: 2.1%;
+}
+.header__logo {
+  padding-left: 10%;
+}
+.header__inner {
+	width: 93%;
+	margin: 0 auto;
+  padding-top: 3.15vw;
+}
+
+.head-menu {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.head-menu>li{
+  &:nth-child(1) {
+    background-color: #791425;
+    border-radius: 50px;
+    padding: 0.6%;
+    a {
+      &:hover {
+        color:#ffffff;
+      }
+    }
+
+
+  }
+
+  &:nth-child(2) {
+
+    border-radius: 50px;
+    padding: 0.6%;
+    margin-left: 7.5%;
+    a {
+      &:hover {
+        color:#ffffff;
+      }
+    }
+    &:hover {
+      background-color: #791425;
+    }
+
+  }
+  &:nth-child(3) {
+
+    border-radius: 50px;
+    padding: 0.6%;
+    margin-left: 9%;
+    a {
+      &:hover {
+        color:#ffffff;
+      }
+    }
+    &:hover {
+      background-color: #791425;
+    }
+  }
+
+  &:nth-child(4) {
+
+    border-radius: 50px;
+    padding: 0.6%;
+    margin-left: 11%;
+    a {
+      &:hover {
+        color:#ffffff;
+      }
+    }
+    &:hover {
+      background-color: #791425;
+    }
+  }
+  &:nth-child(5) {
+
+    border-radius: 50px;
+    padding: 0.6%;
+    margin-left: 11.5%;
+    a {
+      &:hover {
+        color:#ffffff;
+      }
+    }
+    &:hover {
+      background-color: #791425;
+    }
+  }
+}
+
+.head-menu__item {
+  text-decoration: none;
+  font-family: MontserratMedium;
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.block-social {
+  display: flex;
+  justify-content: end;
+
+}
+.block-social__inner {
+  padding-top: 1.5vw;
+  margin-right: 2%;
+}
+.block-social__item {
+  width: 30px;
+  height: 30px;
+  margin-right: 3%;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.header__discover {
+  font-family: MontserratMedium;
+  font-size: 8.3vw;
+  color: #FFFFFE;
+  padding-top: 9.5vw;
+  padding-left: 1.1vw;
+  letter-spacing: -0.2vw;
+}
+.header__button {
+  padding-left: 2vw;
+  padding-top: 2.7vw;
+}
+.header__button-style {
+  background-color: #1a1a1c;
+  border: none;
+  border-radius: 14px;
+  font-family: MontserratRegular;
+  font-size: 1.7vw;
+  color: #ffffff;
+  padding: 0.4vw 3.7vw;
+}
+.header__text {
+  font-family: MontserratRegular;
+  font-size: 1.4vw;
+  color: #ffffff;
+  padding-left: 2.2vw;
+  margin-top: -0.38vw;
+  line-height: 1.75vw;
+  word-spacing: -0.05vw;
+
+
+}
+.modal-content, .modal-title {
+  font-size: 1.4vw!important;
+}
+.modal-dialog {
+    min-width: 50vw;
+}
+.accordion-body {
+  font-family: MontserratRegular;
+  font-size: 1.4vw;
+  color: #ffffff;
+  background-color: #ce203900;
+  line-height: 1.75vw;
+  padding:0px!important;
+}
+.accordion-item {
+  &:last-of-type {
+    border: none!important;
+  }
+  &:first-of-type {
+    border: none;
+  }
+  background-color: #ce203900!important;
+}
+.accordion-header {
+  background-color: #ce203900;
+}
+.wraper{
+  max-height: auto;
+  // overflow-y: scroll;
+  width: 45vw;
+
+}
+.places {
+  background-color: #ffffff;
+  padding-bottom: 7.8vw;
+}
+.places__inner {
+  width: 90vw;
+  margin: 0 auto;
+}
+.places__title {
+  font-family: MontserratBold;
+  font-size: 2vw;
+  color: #1f262f;
+  padding-top: 6.1vw;
+  font-size: 4.2vw;
+  padding-left: 36px!important;
+  padding-bottom: 0.8vw;
+  letter-spacing: 1.1px;
+}
+.places__red-block {
+  padding: 0.3vw;
+  background-color: #791425;
+  width: 60.6%;
+  margin-left: 32px;
+}
+.places__img {
+
+  padding-top: 4.6vw;
+  text-align: center;
+
+}
+.places__img img {
+  width: 9.5vw;
+}
+
+.places__item {
+  color: #1f262f;
+  font-family: MontserratBold;
+  font-size: 1.7vw;
+  text-align: center;
+  padding-top: 2.2vw;
+
+}
+
+.places__mountes-text {
+  font-family: MontserratRegular;
+  font-size: 1.7vw;
+  text-align: center;
+  padding-top: 2.25vw;
+
+}
+.places__arktica-text {
+  font-family: MontserratRegular;
+  font-size: 1.7vw;
+  text-align: center;
+  padding-top: 2.25vw
+}
+.places__forest-text {
+  font-family: MontserratRegular;
+  font-size: 1.7vw;
+  text-align: center;
+  padding-top: 2.25vw
+}
+.promo {
+  background-color:#1a1a1c;
+  background-image: url("../img/Group1.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 0%;
+  padding-bottom: 13.6vw;
+
+}
+.promo__text {
+  font-family: MontserratBold;
+  font-size: 10.6vw;
+  color: #fedac3;
+  line-height: 8.3vw;
+}
+.promo__text-inner {
+  padding-top: 21.5vw;
+  padding-left: 8.5vw;
+
+}
+.promo__text-discount {
+  font-family: MontserratRegular;
+  font-size: 1.54vw;
+  color: #fedac3;
+}
+.promo__discount-inner {
+  padding-left: 9.6vw;
+  padding-top: 2.6vw;
+}
+
+.promo__button {
+  font-family: MontserratRegular;
+  font-size: 1.78vw;
+  color: #000000;
+  background-color: #CE2039;
+  display: inline-block;
+  padding: 0.4vw 1.2vw;
+  border-radius: 1vw;
+}
+.promo__button-inner {
+  padding-top: 7.3vw;
+  padding-left: 10.4vw;
+}
+.dropend .dropdown-toggle {
+  &:after {
+    display:none!important;
+  }
+}
+
+.dropdown-menu {
+
+
+  font-family: MontserratRegular!important;
+  font-size: 1.54vw!important;
+  color: #fedac3!important;
+  // inset: 100px auto auto 2vw!important;
+
+}
+
+
+
+.aventure {
+  background-color: #000000;
+  background-image: url("../img/Group2.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 0%;
+  padding-bottom: 25.7vw;
+
+}
+ .aventure__tittle {
+  font-family: MontserratBold;
+  font-size: 10.6vw;
+  color: #fedac3;
+ }
+ .aventure__text {
+  font-family: MontserratRegular;
+  font-size: 1.68vw;
+  color: #fedac3;
+  letter-spacing: 0.18vw;
+ }
+.aventure__tittle-inner {
+  margin: 0 auto;
+  width: 82.3vw;
+  padding-top: 5vw;
+}
+
+.aventure__text-inner {
+  margin: 0 auto;
+  width: 80vw;
+  padding-top: 1.7vw;
+}
+.aventure__discount-text {
+  font-family: MontserratBold;
+  font-size: 19.3vw;
+  color: #fedac3;
+}
+.aventure__discount-text >div {
+  font-size: 6.8vw;
+  display: contents;
+}
+
+.aventure__discount-inner {
+  padding-top: 40.0vw;
+  margin: 0 auto;
+  width: 28.1vw;
+}
+.aventure__discount-text2 {
+  font-family: MontserratRegular;
+  font-size: 8.5vw;
+  color: #fedac3;
+}
+
+.aventure__discount2-inner {
+  padding-top: 0vw;
+  margin: 0 auto;
+  width: 28.1vw;
+  margin-top: -9.65vw;
+}
+.aventure__discount-text3 {
+  font-family: MontserratBold;
+  font-size: 2.61vw;
+  color: #fedac3;
+  letter-spacing: 0.04vw;
+}
+.aventure__discount3-inner {
+
+  margin: 0 auto;
+  width: 27.5vw;
+  margin-top: -2.85vw;
+}
+
+.tours {
+  background-color: #CE2039;
+}
+.tours-background {
+  background-image: url("../img/tours.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 0%;
+}
+.tours__discover-tittle {
+  font-family: MontserratMedium;
+  font-size: 10.05vw;
+  color: #ffffff;
+}
+
+.tours__discover-inner {
+  padding-top: 7vw;
+  margin: 0 auto;
+  width: 80.1vw;
+}
+.tours__text {
+  font-family: MontserratRegular;
+  font-size: 2.8vw;
+  color: #ffffff;
+  letter-spacing: 0.08vw;
+}
+.tours__test-inner {
+  margin: 0 auto;
+  width: 80.1vw;
+  margin-top: -1.5vw;
+  padding-bottom: 27.3vw;
+}
+
+.tours__tours-tittle {
+  font-family: MontserratBold;
+  font-size: 9.66vw;
+  color: #1f262f;
+  letter-spacing: 0.84vw;
+  line-height: 7.5vw;
+}
+.tours__tours-inner {
+
+  margin: 0 auto;
+  width: 90.5vw;
+  padding-bottom: 1.1vw;
+}
+.polar-background {
+  background-image: url("../img/polar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+}
+.tours__polar-tittle {
+  font-family: MontserratBold;
+  font-size: 8.3vw;
+  color: #fedac3;
+  letter-spacing: 0.5vw;
+}
+.tours__polar-tittleInner {
+  padding-top: 6.6vw;
+  margin: 0 auto;
+  width: 90.5vw;
+
+}
+
+.tours__polar-text {
+  font-family: MontserratRegular;
+  font-size: 1.9vw;
+  color: #fedac3;
+  letter-spacing: 0.107vw;
+
+}
+.tours__polar-textInner {
+  margin: 0 auto;
+  width: 90.4vw;
+  margin-top: -1.2vw;
+
+}
+.tours__lables-wrap {
+  margin: 0 auto;
+  width: 93vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 4vw;
+
+}
+.tours__lables {
+  margin: 0 auto;
+  width: 93.4vw;
+
+}
+.tours-ShapeGPS {
+  width: 41px;
+  height: auto;
+
+}
+.tours-ShapeSnow {
+  width: 54px;
+  height: auto;
+}
+.tours-Shape5 {
+  width: 74px;
+  height: auto;
+}
+.tours__lables {
+  // display: flex;
+}
+.tours__lables-inner {
+  margin: 0 19.5px;
+}
+
+.tours__button {
+  font-family: MontserratRegular;
+  font-size: 1.78vw;
+  color: #000000;
+  background-color: #CE2039;
+  display: inline-block;
+  padding: 0.4vw 1vw;
+  border-radius: 1vw;
+  letter-spacing: 0.07vw;
+}
+.tours__button-inner {
+    padding-top: 6.8vw;
+    padding-left: 4.6vw;
+    padding-bottom: 11.2vw;
+}
+
+#name, #inputEmail4 {
+  font-size: 1rem!important;
+}
+.karelia-background {
+  background-image: url("../img/karelia.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 0%;
+}
+.tours__karelia-tittle {
+  font-family: MontserratBold;
+  font-size: 8.3vw;
+  color: #fedac3;
+  letter-spacing: 0.25vw;
+}
+.tours__karelia-tittleInner {
+  padding-top: 1.2vw;;
+  margin: 0 auto;
+  width: 84.7vw;
+  text-align: end;
+
+}
+.tours__karelia-text {
+  font-family: MontserratRegular;
+  font-size: 1.9vw;
+  color: #fedac3;
+  letter-spacing: -0.005vw;
+
+}
+.tours__karelia-textInner {
+  margin: 0 auto;
+  width: 83.4vw;
+  margin-top: 5.2vw;
+  text-align: end;
+
+}
+.tours__karelia-textWrap {
+  margin: 0 auto;
+  width: 83.4vw;
+  margin-top: -1.4vw;
+  text-align: end;
+
+}
+.karelia__wrap {
+  width: 86.2vw;
+  padding-top: 1.3vw;
+  justify-content: end;
+}
+
+.tours__button-karelia {
+  font-family: MontserratRegular;
+  font-size: 1.78vw;
+  color: #fedac3;;
+  background-color: #19191b;
+  display: inline-block;
+  padding: 0.4vw 1vw;
+  border-radius: 1vw;
+  letter-spacing: 0.1vw;
+}
+.karelia__buttom-inner {
+  padding-top: 6vw;
+  padding-left: 81.6vw;
+  padding-bottom: 8.6vw;
+}
+.contact-background {
+  background-color:#0a0604;
+  background-image: url("../img/contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 0%;
+}
+.contact__tittle {
+  font-family: MontserratRegular;
+  font-size: 7.5vw;
+  color: #fedac3;
+  letter-spacing: 0.16vw;
+}
+.contact__tittle-inner {
+  padding-top: 10.5vw;
+  margin: 0 auto;
+  width: 77.7vw;
+  text-align: center;
+}
+
+.contact__text {
+  font-family: MontserratRegular;
+  font-size: 2.29vw;
+  color: #fedac3;
+  letter-spacing: 0.16vw;
+}
+.contact__text-inner {
+  padding-top: 1.1vw;
+  margin: 0 auto;
+  width: 77.7vw;
+  text-align: center;
+}
+.contact__wrap {
+  margin-top: -1.7vw;
+  padding-bottom: 6.7vw;
+}
+.contact__input-inner {
+  margin: 0 auto;
+  width: 74.5vw !important;
+  padding-bottom: 29.8vw;
+}
+.btn-outline-secondary {
+  color: #ffffff!important;
+  border-color: #CE2039!important;
+}
+.btn {
+  background-color: #CE2039!important;
+  width: 21.5vw;
+  font-family: MontserratRegular!important;
+  font-size: 2.38vw !important;
+  letter-spacing: 0.15vw!important;
+}
+
+.form-control {
+  font-family: MontserratRegular!important;
+  font-size: 2.48vw!important;
+  padding-left: 8.5vw!important;
+  padding-top: 1vw!important;
+  padding-bottom: 1vw!important;
+}
+.footer-background {
+  background-color: #CE2039;
+
+}
+.footer__inner {
+  margin: 0 auto;
+  width: 85.7vw;
+  display: flex;
+  justify-content: end;
+  padding-top: 2vw;
+  padding-bottom: 5.7vw;
+}
+.footer__list {
+  font-family: MontserratBold;
+  list-style-type: none;
+  font-size: 1.5vw;
+}
+.list__size {
+  font-size: 1.2vw;
+  font-family: MontserratBold;
+  text-decoration: none;
+  color: #212529;
+}
+.list__inner {
+  padding-top: 2.2vw;
+}
+.list__interval {
+  margin-top: -0.2vw;
+}
+@media (max-width: 3501px) and (min-width:2501px) {
+  .head-menu__item {
+    font-size: 37px;
+  }
+  .block-social__item {
+    width: 40px;
+    height: 40px;
+    margin-right: 3%;
+  }
+
+}
+@media (max-width: 2500px) and (min-width:1930px) {
+  .head-menu__item {
+    font-size: 27px;
+  }
+}
+@media (max-width: 1438px) {
+  .head-menu>li{
+    &:nth-child(1) {
+      background-color: #791425;
+      border-radius: 50px;
+      padding: 0.6%;
+      a {
+        &:hover {
+          color:#ffffff;
+        }
+      }
+
+
+    }
+
+    &:nth-child(2) {
+
+      border-radius: 50px;
+      padding: 0.6%;
+      margin-left: 7%;
+      a {
+        &:hover {
+          color:#ffffff;
+        }
+      }
+      &:hover {
+        background-color: #791425;
+      }
+
+    }
+    &:nth-child(3) {
+
+      border-radius: 50px;
+      padding: 0.6%;
+      margin-left: 7%;
+      a {
+        &:hover {
+          color:#ffffff;
+        }
+      }
+      &:hover {
+        background-color: #791425;
+      }
+    }
+
+    &:nth-child(4) {
+
+      border-radius: 50px;
+      padding: 0.6%;
+      margin-left: 7%;
+      a {
+        &:hover {
+          color:#ffffff;
+        }
+      }
+      &:hover {
+        background-color: #791425;
+      }
+    }
+    &:nth-child(5) {
+
+      border-radius: 50px;
+      padding: 0.6%;
+      margin-left: 7%;
+      a {
+        &:hover {
+          color:#ffffff;
+        }
+      }
+      &:hover {
+        background-color: #791425;
+      }
+    }
+  }
+}
+@media (max-width: 1209px) {
+  .head-menu>li{
+    &:nth-child(1) {
+      background-color: #791425;
+      border-radius: 50px;
+      padding: 0.6%;
+      a {
+        &:hover {
+          color:#ffffff;
+        }
+      }
+
+
+    }
+    &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5){
+
+      border-radius: 50px;
+      padding: 0.6%;
+      margin-left: 5%;
+      a {
+        &:hover {
+          color:#ffffff;
+        }
+      }
+      &:hover {
+        background-color: #791425;
+      }
+
+    }
+
+  }
+}
+@media (max-width: 1085px) {
+  .head-menu {
+
+  }
+}
+
+@media (max-width: 991px) {
+  .hamburger {
+    display: block!important;
+  }
+  .header__navig {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .tours__lables-inner>a>img {
+    width: 23px;
+    height: auto;
+  }
+
+  .tours__lables-inner>img {
+    width: 30px;
+    height: auto;
+  }
+}
