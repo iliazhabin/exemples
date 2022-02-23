@@ -1,5 +1,5 @@
 <?php
-	$mysqli = mysqli_connect("localhost", "", "", "");
+	$mysqli = mysqli_connect("");
 	$res = $mysqli->query('SELECT * FROM users;');
 	echo"<h1>Учебный Сайт.Обратная форма</h1>";
 	echo"<h5>(Данные вымышленны,поэтому вход без пароля)</h5>";
